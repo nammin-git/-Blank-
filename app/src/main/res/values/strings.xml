@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CodnetLogin</string>
+    <string name="ID">ID</string>
+    <string name="PW">password</string>
+    <string name="btn_1">Login</string>
+    <string name="btn_2">Sign Up</string>
+</resources>
