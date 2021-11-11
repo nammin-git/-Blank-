@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Login_Display</string>
+    <string name="ID">ID</string>
+    <string name="ID_hint">ID를 입력해주세요.</string>
+    <string name="PW">PASSWORD</string>
+    <string name="PW_hint">비밀번호를 입력해주세요.</string>
+
+    <string name="success">로그인에 성공하였습니다.</string>
+    <string name="fail">로그인에 실패하였습니다.</string>
+
+    <string name="signup">회원가입 페이지</string>
+
+    <string name="main_text">내용 입력 칸입니다.\n레이아웃으로 sns 화면을 만들어보았습니다.</string>
+    <string name="user_name">사용자 이름</string>
+    <string name="comment">수고하셨습니다. ^^</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
