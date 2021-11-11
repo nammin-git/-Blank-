@@ -1,0 +1,14 @@
+com/example/login_display/databinding/FragmentLoginBinding.java
+ com.example.login_display.databinding.FragmentLoginBinding
+com/example/login_display/BuildConfig.java
+ com.example.login_display.BuildConfig
+com/example/login_display/databinding/FragmentSuccessBinding.java
+ com.example.login_display.databinding.FragmentSuccessBinding
+com/example/login_display/databinding/FragmentFailBinding.java
+ com.example.login_display.databinding.FragmentFailBinding
+com/example/login_display/databinding/FragmentHomeBinding.java
+ com.example.login_display.databinding.FragmentHomeBinding
+com/example/login_display/databinding/ActivityMainBinding.java
+ com.example.login_display.databinding.ActivityMainBinding
+com/example/login_display/databinding/FragmentSignupBinding.java
+ com.example.login_display.databinding.FragmentSignupBinding
