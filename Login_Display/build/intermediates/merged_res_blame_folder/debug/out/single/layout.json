@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\mg\\AndroidStudioProjects\\Login_Display\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_login.xml",
+        "source": "C:\\Users\\mg\\AndroidStudioProjects\\Login_Display\\app\\src\\main\\res\\layout\\fragment_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\mg\\AndroidStudioProjects\\Login_Display\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\mg\\AndroidStudioProjects\\Login_Display\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\mg\\AndroidStudioProjects\\Login_Display\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_signup.xml",
+        "source": "C:\\Users\\mg\\AndroidStudioProjects\\Login_Display\\app\\src\\main\\res\\layout\\fragment_signup.xml"
+    },
+    {
+        "merged": "C:\\Users\\mg\\AndroidStudioProjects\\Login_Display\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_success.xml",
+        "source": "C:\\Users\\mg\\AndroidStudioProjects\\Login_Display\\app\\src\\main\\res\\layout\\fragment_success.xml"
+    },
+    {
+        "merged": "C:\\Users\\mg\\AndroidStudioProjects\\Login_Display\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_fail.xml",
+        "source": "C:\\Users\\mg\\AndroidStudioProjects\\Login_Display\\app\\src\\main\\res\\layout\\fragment_fail.xml"
+    },
+    {
+        "merged": "C:\\Users\\mg\\AndroidStudioProjects\\Login_Display\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\mg\\AndroidStudioProjects\\Login_Display\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    }
+]
