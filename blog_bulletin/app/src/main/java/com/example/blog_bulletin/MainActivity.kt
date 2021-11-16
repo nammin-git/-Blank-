@@ -1,19 +1,23 @@
 package com.example.blog_bulletin
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.blog_bulletin.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var button : ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val setting = R.id.setting
+        val view = button.root
+        setContentView(view)
 
-        setting.setOnClickListener {
-            Toast.makeText(this,"Hello World!", Toast.LENGTH_SHORT).show()
+        button.setting.setOnClickListener {
+            print("설정 버튼 입니다.")
         }
     }
 }
