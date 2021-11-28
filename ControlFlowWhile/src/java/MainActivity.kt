@@ -25,5 +25,20 @@ class MainActivity : AppCompatActivity() {
             game += 1
         } while (game < match)
 
+        //break
+        for(index in 1..10) {
+            Log.d("break", "현재 index는 ${index}입니다.")
+            if(index >5) {
+                break
+            }
+        }
+        
+        for(except in 1..10) {
+            if(except > 3 && except < 8) {
+                continue
+            }
+            Log.d("continue", "현재 index는 ${except}입니다.")
+        }
+
     }
 }
