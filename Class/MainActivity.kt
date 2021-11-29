@@ -19,7 +19,10 @@ class MainActivity : AppCompatActivity() {
 
         var kotlinThree = KotlinThree()
         kotlinThree.word = "new value"
-        kotlinThree.printOne()
+        kotlinThree.printWord()
+
+        KotlinFour.sentence = "Curry is delicious"
+        KotlinFour.printSentence()
     }
 
     class Kotlin {
@@ -44,8 +47,17 @@ class MainActivity : AppCompatActivity() {
 
     class KotlinThree {
         var word: String = "None"
-        fun printOne() {
+        fun printWord() {
             Log.d("class", "word에 입력된 값은 ${word}입니다.")
+        }
+    }
+
+    class KotlinFour {
+        companion object {
+            var sentence: String = "First Blood"
+            fun printSentence() {
+                Log.d("class", "sentence에 입력된 값은 ${sentence}입니다.")
+            }
         }
     }
 }
