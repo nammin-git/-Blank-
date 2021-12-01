@@ -9,7 +9,10 @@ class Inheritance : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        var event = ChildClass()
 
+        //String 익스텐션 테스트하기
+        testStringExtension()
     }
 
 }
@@ -29,15 +32,34 @@ class FirstChild : FirstParent() {
     }
 }
 
-//생성자 파라미터가 있는 클래스의 상속
-open class SecondParent(age: Int) {
-    var name = "Cathy"
-    fun sayHello(age: Int, name: String) {
-        Log.d("Inheritance", "Hello ${name, age}")
+//오버라이드
+open class BaseClass {
+    open fun opened() {
+        Log.d("Inheritance", "BaseClass is opened.")
+    }
+    open fun notOpened() {
+        Log.d("Inheritance", "BaseClass is not opened.")
     }
 }
 
-class SecondChild(age: Int) : SecondParent {
-    constructor(age: Int) : super(age)
+class ChildClass : BaseClass() {
+    override fun opened() {
+        Log.d("Inheritance", "ChildClass is Opened.")
+    }
 
+    override fun notOpened() {
+        Log.d("Inheritance", "ChildClass is Opened.")
+    }
+}
+
+//익스텐션
+fun testStringExtension() {
+    var original = "Hello"
+    var added = " Guys~"
+    //plus 함수를 통하여 문자열을 더할 수 있습니다.
+    Log.d("Extension", "added를 더한 값은 ${original.plus(added)}")
+}
+
+fun String.plus(word: String): String {
+    return this + word
 }
