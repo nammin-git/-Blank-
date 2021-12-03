@@ -62,10 +62,54 @@ class MainActivity : AppCompatActivity() {
                 get() = TODO("Not yet implemented")
                 set(value) {}
             //왜 drink() cheer() 함수가 안 나오고 get() set() 함수가 나오지?
+            override fun drink() {
+                Log.d("interface", "Drink tsingtao")
+            }
+            override fun cheer() {
+                Log.d("interface", "Cheers!")
+            }
         }
 
-        class Cass = object : Beer {
-            override var name: String = "CASS"
+
+        //접근제한자
+        open class Parent {
+            private val privateVal = 1
+            protected open val protectedVal = 2
+            internal val internalVal = 3
+            val defaultVal = 4
         }
+
+        class Child : Parent() {
+            fun callValues() {
+                Log.d("Modifier", "private 변수의 값은 호출되지 않습니다.")
+                Log.d("Modifier", "protected 변수의 값은 ${protectedVal}")
+                Log.d("Modifier", "internal 변수의 값은 ${internalVal}")
+                Log.d("Modifier", "default 변수의 값은 ${defaultVal}")
+            }
+        }
+
+        class Stranger {
+            fun callValues() {
+                val parent = Parent()
+                Log.d("Modifier", "private 변수의 값은 호출되지 않습니다.")
+                Log.d("Modifier", "protected 변수의 값은 호출되지 않습니다.")
+                Log.d("Modifier", "internal 변수의 값은 ${parent.internalVal}")
+                Log.d("Modifier", "default 변수의 값은 ${parent.defaultVal}")
+            }
+        }
+
+
+        //제네릭
+        fun testGenerics() {
+            var list: MutableList<String> = mutableListOf()
+            list.add("월")
+            list.add("화")
+            list.add("수")
+
+            for (item in list) {
+                Log.d("Generic", "list에 입력된 값은 ${item}")
+            }
+        }
+
     }
 }
