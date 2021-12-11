@@ -1,4 +1,4 @@
-package com.example.widgettextview
+package com.example.layout
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
