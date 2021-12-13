@@ -6,32 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <RadioGroup
-        android:id="@+id/radioGroup"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
-        <RadioButton
-            android:id="@+id/radioApple"
-            android:layout_width="match_parent"
+        <CheckBox
+            android:id="@+id/checkAmericano"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="사과" />
+            android:layout_weight="1"
+            android:text="아메리카노" />
 
-        <RadioButton
-            android:id="@+id/radioBanana"
-            android:layout_width="match_parent"
+        <CheckBox
+            android:id="@+id/checkCappucino"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="바나나" />
+            android:layout_weight="1"
+            android:text="카푸치노" />
 
-        <RadioButton
-            android:id="@+id/radioOrange"
-            android:layout_width="match_parent"
+        <CheckBox
+            android:id="@+id/checkLatte"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="오렌지" />
+            android:layout_weight="1"
+            android:text="라테" />
 
-    </RadioGroup>
+        <CheckBox
+            android:id="@+id/checkSmoothie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="스무디" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
