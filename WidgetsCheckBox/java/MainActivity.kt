@@ -1,18 +1,18 @@
-package com.example.widgetscheckbox
+package com.example.checkbox
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.CompoundButton
-import com.example.widgetscheckbox.databinding.ActivityMainBinding
+import com.example.checkbox.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-
+    //viewBinding을 위한 binding object
     lateinit var binding: ActivityMainBinding
 
-    //listener 함수
+    //listener을 블록 형태로 사용하지 않고 분리
     var listener = CompoundButton.OnCheckedChangeListener { buttonView, isChecked ->
-        if (isChecked) {
+        if(isChecked) {
             when (buttonView.id) {
                 R.id.checkAmericano -> Log.d("CheckBox", "아메리카노가 선택되었습니다.")
                 R.id.checkCappucino -> Log.d("CheckBox", "카푸치노가 선택되었습니다.")
@@ -40,12 +40,5 @@ class MainActivity : AppCompatActivity() {
         binding.checkCappucino.setOnCheckedChangeListener(listener)
         binding.checkLatte.setOnCheckedChangeListener(listener)
         binding.checkSmoothie.setOnCheckedChangeListener(listener)
-
-        /*
-        binding.checkAmericano.setOnCheckedChangeListener { buttonView, isChecked ->
-            if(isChecked) Log.d("CheckBox", "아메리카노가 선택되었습니다.")
-            else Log.d("CheckBox","사과가 선택해제되었습니다.")
-         */
-        }
     }
 }
