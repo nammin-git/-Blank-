@@ -23,5 +23,8 @@ class MainActivity : AppCompatActivity() {
             override fun onStopTrackingTouch(seekBar: SeekBar?) {
             }
         })
+
+        //시크바의 default 설정
+        binding.seekBar.progress = 10
     }
 }
