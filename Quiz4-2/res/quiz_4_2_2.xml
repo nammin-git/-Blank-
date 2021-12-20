@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkCoconut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="코코넛" />
+
+        <CheckBox
+            android:id="@+id/checkDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="대추야자" />
+
+        <CheckBox
+            android:id="@+id/checkOlive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="올리브" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
