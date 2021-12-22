@@ -1,30 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/textChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <CheckBox
-            android:id="@+id/checkCoconut"
+            android:id="@+id/checkApple"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="코코넛" />
+            android:text="사과" />
 
         <CheckBox
-            android:id="@+id/checkDate"
+            android:id="@+id/checkBanana"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="대추야자" />
+            android:text="바나나" />
 
         <CheckBox
-            android:id="@+id/checkOlive"
+            android:id="@+id/checkOrange"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="올리브" />
+            android:text="오렌지" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
