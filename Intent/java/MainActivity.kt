@@ -11,7 +11,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        val intent = Intent(this, SubActivity::class.java)
-        binding.buttonExeSub.setOnClickListener { startActivity(intent) }
+        val intent = Intent(this, NewActivity::class.java)
+        binding.btnStart.setOnClickListener { startActivity(intent) }
+        intent.putExtra("from1", "hello Bundle")
+        intent.putExtra("from2", 2021)
     }
 }
